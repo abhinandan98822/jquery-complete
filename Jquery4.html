@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Check-1</h2>
+    <div id="vox">
+        <h4>Jquery Mouse-events</h4>
+        <h3>Abhinandan Details</h3>
+        <p>Hello Myself Abhinandan,and I am Business_Person</p>
+    </div>
+
+    <h2>Check-2</h2>
+    <div id="vox2">
+        <h3>Akshay Details</h3>
+   <p id="p2">Hello,My name is Akshay,and I am big Programmer</p>
+    </div>
+    
+
+    <script>
+        $(document).ready(function(){
+            //click
+            $('#vox').click(function(){
+
+            $('#vox').css('background' ,'green')
+
+            $('h4').css('border','3px solid red')
+
+            var a=$('h2').html()
+            console.log(a)
+            });
+
+            //Double-click
+            $('#vox2').dblclick(function(){
+                $('#vox2').css('background','red')
+            });
+             //Context-menu/right-click
+            $('#vox2').contextmenu(function(){
+                $('#vox2').css('background','orange')
+            });
+                   //mouse-enter
+            $('#vox2').mouseenter(function(){
+                $('#vox2').css('background','purple')
+            });
+                  //mouse-leave
+            $('#vox').mouseleave(function(){
+                $('#vox').css('background','pink')
+            });
+
+               //mouse down
+            $('#vox2').mousedown(function(){
+                $('#p2').css('background','black')
+            });
+
+               //mouse over
+            $('#vox2').mouseover(function(){
+                $('h2').css('background','maroon')
+            });
+
+            $('#vox2').mouseup(function(){
+                $('p').css('background','white')
+            });
+       
+
+
+        })
+    </script>
+</body>
+</html>

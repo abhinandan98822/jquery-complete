@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+    background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Jquery Wrapall and wrap </h3>
+    <h2>Check-1</h2>
+    <div id="vox">
+        <h3>Abhinandan Details</h3>
+        <p >Hello Myself Abhinandan,and I am Business_Person</p>
+    </div>
+    <div id="vox2"></div>
+    <h1>wrapall</h1>
+    <button id="wrapall">Wrapall</button>
+    <button id="wrapinner">Wrapinner</button>
+    <script>
+        $(document).ready(function(){
+            $('#wrapall').click(function(){
+                $('h1').wrapAll('#vox')
+            });
+            $('#wrapinner').click(function(){
+                $('h1').wrapInner('#vox2')
+            });
+        })
+    </script>
+</body>
+</html>

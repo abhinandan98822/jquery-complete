@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+     #main{
+    height:420px;
+    padding: 3px;
+    background-color: rgb(48, 184, 184);
+    border: 5px outset rgb(14, 13, 13);   
+    text-align: center;
+    margin: 10px;
+    width: 580px;
+    position:relative;
+    float: center;
+}    
+
+#outer{
+    height:400px;
+    background-color: rgb(197, 109, 8);
+    padding: 2px;
+    border: 5px outset rgb(14, 13, 13);   
+    text-align: center;
+    width: 530px;
+    position:relative;
+    float: center;
+}  
+#inner{
+    height:370px;
+    background-color: rgb(26, 26, 204);
+    padding: 2px;
+    border: 5px outset rgb(14, 13, 13);   
+    text-align: center;
+    width: 480px;
+    position:relative;
+    float: center;
+    
+}  
+
+    </style>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery has and is method</title>
+</head>
+<body>
+    <h2>Jquey has and is method</h2>
+<div id="main"><p>Hello my name is Abhinandan</p></div>
+    <div id="outer"><p>Hello my name is Abhinandan</p></div>
+    <div id="inner">Hello my name is Abhinandan</div>
+    <li>orange</li>
+    <li>Maango</li>
+    <li>Apple</li>
+    <li>Grapes</li>
+   
+    <script>
+        $(document).ready(function(){
+        //   $('#main').has('p,li').css('background','white')
+        //   $('p').last().css('background','green');
+            if($('p').parent().is('div')){
+                console.log('p').parent().is('div')
+            }
+        });
+        </script>
+</body>
+</html>     

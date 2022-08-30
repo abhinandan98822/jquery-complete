@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery slideDown and slideup method</title>
+</head>
+<body>
+    <h2>Jquery slideDown and slidetoggle/slideup</h2>
+    <div id="vox" class="ok">
+        <h3>Abhinandan Details</h3>
+        <p >Hello Myself Abhinandan,and I am Business_Person</p>
+    </div>
+        <button id="slideup">Slide-up</button>
+        <button id="slidedown">Slide-down</button>
+        <button id="slidetoggle">slidetoggle</button>
+       
+
+   
+    <script>
+        $(document).ready(function(){
+            $('#slideup').click(function(){
+                $('#vox').slideUp(2000)
+            })
+            $('#slidedown').click(function(){
+                $('#vox').slideDown(3000)
+            })
+            $('#slidetoggle').click(function(){
+                $('#vox').slideToggle()
+            })
+        })
+        </script>
+</body>
+</html>     

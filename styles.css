@@ -1,0 +1,21 @@
+div{
+    height:260px;
+    padding: 3px;
+    background-color: azure;
+    border: 5px outset rgb(14, 13, 13);   
+    text-align: center;
+    margin: 10px;
+    width: 260px;
+    float: center;
+    position:relative;
+}
+#vox2{
+    height:260px;
+    padding: 3px;
+    background-color: azure;
+    border: 5px outset rgb(14, 13, 13);   
+    text-align: center;
+    margin: 10px;
+    width: 260px;
+    position:relative;
+}
